@@ -1,7 +1,6 @@
 body {
     background: #121212;
     margin: 0;
-    overflow: hidden;
 }
 
 #app {
@@ -12,12 +11,87 @@ body {
     place-items: center;
 }
 
+#board {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    background: #c5c5c5;
+    border: 7px #eeeeee outset;
+}
+
+#scores {
+    height: 64px;
+    display: grid;
+    grid-template-columns: repeat(3, calc(100%/3));
+    grid-template-rows: 100%;
+    border: 7px #eeeeee inset;
+    margin-bottom: 10px;
+}
+
+#options {
+    height: 64px;
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    grid-template-rows: 100%;
+    border: 7px #eeeeee inset;
+    margin-top: 10px;
+}
+
+#Ih {
+    justify-self: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#Im {
+    justify-self: end;
+    margin-left: 0;
+}
+
 #box {
+    border: 7px #eeeeee inset;
     width: fit-content;
     height: fit-content;
     display: grid;
     grid-template-columns: 0;
     grid-template-rows: 0;
+}
+
+#reset {
+    position: relative;
+    height: calc(100% - 28px);
+    aspect-ratio: 1;
+    justify-self: center;
+    align-self: center;
+    border: 7px #eeeeee outset;
+    margin: 14px;
+    color: red;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 1.6rem;
+    display: grid;
+    place-content: center;
+}
+
+#time {
+    justify-self: end;
+}
+
+.press {
+    border: 7px #e1e1e1 inset !important;
+}
+
+.dig {
+    width: calc(100% - 16px);
+    max-width: 86px;
+    height: calc(100% - 16px);
+    margin: 7px;
+    border: 2px #eeeeee inset;
+    background-color: #000000;
+    color: red;
+    font-family: "Press Start 2P", sans-serif;
+    font-size: 1.8rem;
+    display: grid;
+    place-content: center;
 }
 
 .cell {
